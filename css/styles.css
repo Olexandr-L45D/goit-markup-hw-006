@@ -26,6 +26,28 @@ ul, ol {
    margin: 0;
 }
 
+
+.container {
+   max-width: 320px;
+   padding-left: 16px;
+   padding-right: 16px;
+   margin: 0 auto;
+}
+
+
+@media screen and (min-width: 768px) {
+   .container {
+      max-width: 768px;
+   }
+}
+
+@media screen and (min-width: 1158px) {
+   .container {
+      max-width: 1158px;
+      padding: 0 15px;
+   }
+}
+
 img {
    display: block;
    max-width: 100%;
@@ -41,36 +63,10 @@ address {
    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.container {
-   width: 100%;
-   padding: 0 15px;
-   margin: 0 auto;
-}
-
-.container {
-   max-width: 320px;
-   padding-left: 16px;
-   padding-right: 16px;
-   margin: 0 auto;
-}
-
-@media screen and (min-width: 768) {
-   .container {
-      max-width: 768px;
-   }
-}
-
-@media screen and (min-width: 1158) {
-   .container {
-      max-width: 1158px;
-      padding: 0 15px;
-   }
-}
-
-
 .header-container {
    display: flex;
    align-items: center;
+   justify-content: space-between;
    
 }
 
@@ -87,8 +83,8 @@ address {
      line-height: 1.17;
      letter-spacing: 0.03em;
      text-transform: uppercase;
-     margin-right: 76px;
-     
+     /* margin-right: 76px; */
+     padding: 17px 0;
 }
 
 .logo-part {
@@ -96,8 +92,9 @@ address {
 }
 
 .nav-list {
-   display: flex;
-   gap: 40px;
+   /*display: flex;
+   gap: 40px;*/
+   display: none;
 }
 
 .nav-link {
@@ -135,13 +132,14 @@ address {
 .address {
   font-style: normal;
   margin-left: auto;
+  display: none;
   
 }
 
-.address-list {
+/*.address-list {
    display: flex;
    gap: 40px;
-}
+}*/
 
 .address-link {
    color: #434455;
@@ -156,6 +154,13 @@ address {
   color: #404BBF;
 }
 
+.open-menu-btn {
+   padding: 0;
+   background-color: transparent;
+   cursor: pointer;
+   line-height: 0;
+   border: none;
+}
 /*---Hero---*/
 
 /*---.hero {
