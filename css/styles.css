@@ -48,13 +48,27 @@ address {
 }
 
 .container {
-   width: 320px;
+   max-width: 320px;
    padding-left: 16px;
    padding-right: 16px;
    margin: 0 auto;
 }
 
-/*---Header--.header-container {
+@media screen and (min-width: 768) {
+   .container {
+      max-width: 768px;
+   }
+}
+
+@media screen and (min-width: 1158) {
+   .container {
+      max-width: 1158px;
+      padding: 0 15px;
+   }
+}
+
+
+.header-container {
    display: flex;
    align-items: center;
    
