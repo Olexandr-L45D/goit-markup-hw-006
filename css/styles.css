@@ -2,7 +2,7 @@
 body {    
     font-family: "Roboto", sans-serif;
     color: #434455;
-   background-color: #fff;
+    background-color: #fff;
    
    
 }
@@ -64,7 +64,7 @@ address {
 }
 
 .header-container {
-   display: flex;
+   display: flex; 
    align-items: center;
    justify-content: space-between;
    
@@ -83,8 +83,9 @@ address {
      line-height: 1.17;
      letter-spacing: 0.03em;
      text-transform: uppercase;
-     /* margin-right: 76px; */
      padding: 17px 0;
+     
+     
 }
 
 .logo-part {
@@ -92,11 +93,36 @@ address {
 }
 
 .nav-list {
-   /*display: flex;
-   gap: 40px;*/
    display: none;
 }
 
+.address {
+  font-style: normal;
+  margin-left: auto;
+  display: none;
+  
+}
+
+.open-menu-btn {
+   padding: 0;
+   background-color: transparent;
+   cursor: pointer;
+   line-height: 0;
+   border: none;
+}
+
+@media screen and (min-width: 768px) {
+   
+   .open-menu-btn {
+      display: none;
+   }
+   .logo {
+      margin-right: 120px;
+   }
+   .nav-list {
+      display: flex;
+      gap: 40px;  
+   }
 .nav-link {
    color: #2e2f42;
      font-weight: 500;
@@ -130,21 +156,17 @@ address {
 }
 
 .address {
-  font-style: normal;
-  margin-left: auto;
-  display: none;
-  
+   display: block;
 }
-
-/*.address-list {
+.address-list {
    display: flex;
-   gap: 40px;
-}*/
+   flex-direction: column;
+   gap: 12px;
+}
 
 .address-link {
    color: #434455;
-  font-size: 16px;
-   line-height: 1.5;
+   line-height: 1.16;
    letter-spacing: 0.02em;
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -153,17 +175,29 @@ address {
 .address-link:focus {
   color: #404BBF;
 }
+}
 
-.open-menu-btn {
-   padding: 0;
-   background-color: transparent;
-   cursor: pointer;
-   line-height: 0;
-   border: none;
+@media screen and (min-width: 1158px) {
+   .logo {
+      margin-right: 76px;
+   }
+   .address-list {
+      flex-direction: row;
+      gap: 40px;
+   }
+   .address-link {
+      font-size: 16px;
+      line-height: 1.5;
+   }
 }
 /*---Hero---*/
 
-/*---.hero {
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1158px) {
+.hero {
    background: #2e2f42;
    max-width: 1440px;
    height: 600px;
@@ -215,6 +249,7 @@ address {
 .hero-buy-button:hover,
 .hero-buy-button:focus {
    color: blue;
+}
 }
 
 /*--Skill--*/
@@ -281,7 +316,6 @@ address {
 .skills-list {
    margin: 0px;
    padding-left: 0;
-   /* display: flex; */
    flex-wrap: wrap;
    gap: 72px 0px;
    /* display: block; */
@@ -316,9 +350,6 @@ address {
 }
 
 .skil-sabtitle {
- /*font-weight: 500;
-   font-size: 20px;
-   line-height: 1.2;*/
    font-weight: 700;
    font-size: 36px;
    line-height: 1.11;
@@ -326,22 +357,55 @@ address {
    color: #2e2f42;
    margin-bottom: 8px;
    text-align: center;
-  /* margin-left: 0px;
-   padding-left: 0px;
-   text-align: left; */
+  
 }
 
 .skills-item-text {
    font-weight: 500;
- font-size: 16px;
+   font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #434455;
    /*margin-bottom: 5px;
-   padding: 0px; */
-   
-  
+   padding: 0px; */ 
 }
+
+@media screen and (min-width: 768px) {
+   .container {
+      width: 768px;
+   }
+   .skills-list {
+      display: flex;
+      gap: 72px 24px;
+   }
+   .skills-item {
+      width: calc((100% - 24px) /2);
+      padding: 0px;
+   }
+   .skil-sabtitle {
+      margin-left: 0px;
+      padding-left: 0px;
+      text-align: left;
+   
+      }
+   
+}
+
+@media screen and (min-width: 1158px) {
+   .container {
+      width: 1158px;
+   }
+   .skills-item {
+      width: calc((100% - 72px) /4);
+      
+   }
+   .skil-sabtitle {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+   
+      }
+   }
 
 /*--Tem--*/
 
