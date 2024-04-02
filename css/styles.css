@@ -191,6 +191,9 @@ address {
    }
 }
 /*---Hero---*/
+.hero {
+   padding: 0px;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -201,7 +204,7 @@ address {
    background: #2e2f42;
    max-width: 1440px;
    height: 600px;
-   padding: 188px 0;
+   padding: 188px 0; 
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -254,96 +257,22 @@ address {
 
 /*--Skill--*/
 
-/*--Skill--.skills-section {
-   padding: 120px 0px;
-   
-} */
+
 .skills-section {
-   padding: 96px 0px;
+   padding-top: 96px;
+   padding-bottom: 48px;
    
 }
-/*.skills-section {
-   padding: 72px 0px;
-} */
-
-.visually-hidden {
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   white-space: nowrap;
-   clip-path: inset(100%);
-   clip: rect(0 0 0 0);
-   overflow: hidden;
- }
-/*.ski-conteiner {
-   border: 1px solid #ffff;
-   display: block;
-   display: flex;
-    gap: 24px; 
-   align-items: center;
-   width: calc(100%-4*24);
-   height: 104px;
-   padding: 0 0px;
-   margin-left: 150px 120px; 
-   
-}*/
-
-
-.icon-link-skil {
-   width: 264px;
-   height: 112px;
-   background-color: #F4F4FD;
-   border: 1px solid #8E8F99;
-   border-radius: 4px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   align-content: center;
-  object-fit: none; 
-  margin-bottom: 8px;
-  display: none;
-} 
-
-/*.skills-icon {
-  fill: #111111;
-
-}*/
-
 
 .skills-list {
    margin: 0px;
    padding-left: 0;
    flex-wrap: wrap;
    gap: 72px 0px;
-   /* display: block; */
    align-items: center;
    justify-content: center;
-  
-   
- 
 }
 
-/*.skills-item {
-  border: 1px solid #8e8f99; 
-   border-radius: 4px;
-   display: block; 
-   align-items: center;
-   justify-content: center;
-   height: 112px;
-   width: calc((100% - 72px) /4); 
-   
-   background-color: #f4f4fd;
-   margin-right: 24px;
-   margin-bottom: 8px;
-   padding: 0px; 
-  padding-right: 16px;
-   margin-bottom: 72px;
-   margin-left: 0px;
-   padding-left: 0px;
-}*/
 
 .skills-item {
    margin-bottom: 72px;
@@ -356,8 +285,7 @@ address {
    letter-spacing: 0.02em;
    color: #2e2f42;
    margin-bottom: 8px;
-   text-align: center;
-  
+   text-align: center; 
 }
 
 .skills-item-text {
@@ -366,8 +294,7 @@ address {
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #434455;
-   /*margin-bottom: 5px;
-   padding: 0px; */ 
+   
 }
 
 @media screen and (min-width: 768px) {
@@ -395,8 +322,54 @@ address {
    .container {
       width: 1158px;
    }
+   .skills-section {
+      padding: 120px 0px;
+      
+   }
+   .ski-conteiner {
+   border: 1px solid #ffff;
+   display: block;
+   display: flex;
+    gap: 24px; 
+   align-items: center;
+   width: calc(100%-4*24);
+   height: 104px;
+   padding: 0 0px;
+   margin-left: 150px 120px;   
+   }
+   .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+   .skills-list {
+       display: block; 
+       display: flex;
+       flex-wrap: nowrap;
+   }
    .skills-item {
       width: calc((100% - 72px) /4);
+      border: 1px solid #8e8f99; 
+   border-radius: 4px;
+   display: block; 
+   align-items: center;
+   justify-content: center;
+   height: 112px;
+   background-color: #f4f4fd;
+   margin-right: 24px;
+   margin-bottom: 8px;
+   padding: 0px; 
+  padding-right: 16px;
+   margin-bottom: 72px;
+   margin-left: 0px;
+   padding-left: 0px;
       
    }
    .skil-sabtitle {
@@ -405,10 +378,34 @@ address {
       line-height: 1.2;
    
       }
+      .skills-item-text {
+         margin-bottom: 5px;
+         padding: 0px; 
+      }
+      .icon-link-skil {
+         width: 264px;
+         height: 112px;
+         background-color: #F4F4FD;
+         border: 1px solid #8E8F99;
+         border-radius: 4px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         align-content: center;
+        object-fit: none; 
+        margin-bottom: 8px;
+      } 
+      
+       .skills-icon {
+        fill: #111111;
+
+       }
    }
 
 /*--Tem--*/
-
+.tem-section {
+   padding: 48px 0px;
+}
 /*--Tem--.tem-section {
    padding: 120px 0;
    background-color: #f4f4fd;
@@ -517,6 +514,10 @@ address {
 }
 
 /*--Portfolio--*/
+.portfolo-section {
+   padding-top: 48px;
+   padding-bottom: 96px;
+}
 
 /*--Portfolio-.portfolo-section {
    padding: 120px 0;
