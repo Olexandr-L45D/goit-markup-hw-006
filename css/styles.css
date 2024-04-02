@@ -421,6 +421,12 @@ skills-icon {
    margin-bottom: 72px;
    padding-bottom: 72px;
 }
+.tem-list {  
+   display: flex;
+   flex-wrap: wrap;
+   gap: 72px 0px;
+ 
+}
 .tem-item {
    border-bottom: 1px solid blue;
    border: 1px solid #e7e9fc;
