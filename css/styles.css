@@ -362,19 +362,18 @@ skills-icon {
    .skills-item {
       width: calc((100% - 72px) /4);
       border: 1px solid #8e8f99; 
-   border-radius: 4px;
-   display: block; 
-   align-items: center;
-   justify-content: center;
-   height: 112px;
-   background-color: #f4f4fd;
-   margin-right: 24px;
-   margin-bottom: 8px;
-   padding: 0px; 
-  padding-right: 16px;
-   margin-bottom: 72px;
-   margin-left: 0px;
-   padding-left: 0px;
+    border-radius: 4px;
+    display: block; 
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-right: 24px;
+    margin-bottom: 8px;
+    padding: 0px; 
+    padding-right: 16px;
+    margin-left: 0px;
+    padding-left: 0px;
       
    }
    .skil-sabtitle {
@@ -411,11 +410,6 @@ skills-icon {
 .tem-section {
    padding: 48px 0px;
 }
-/*--Tem--.tem-section {
-   padding: 120px 0;
-   background-color: #f4f4fd;
-}
-
 .tem-title {
    font-weight: 700;
    font-size: 36px;
@@ -426,7 +420,45 @@ skills-icon {
    text-align: center;
    margin-bottom: 72px;
    padding-bottom: 72px;
-
+}
+.tem-item {
+   border-bottom: 1px solid blue;
+   border: 1px solid #e7e9fc;
+   border-top: none;
+   padding: 32px 16px;
+   width: 100%;
+   border-radius: 0 0 4px 4px;
+   padding-bottom: 72px;
+   background-color: #fff;
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+   text-align: center;  
+}
+.sab-title-item {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   text-align: center;
+   color: #2e2f42;
+   margin-bottom: 8px;
+   padding: 0;
+}
+.tem-item-text {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.5;
+     letter-spacing: 0.02em;
+     text-align: center;
+     color: #434455;
+     margin-bottom: 8px;
+  }
+.tem-imeges {
+   display: block;
+   margin: 0 auto;
+}
+/*--Tem--.tem-section {
+   padding: 120px 0;
+   background-color: #f4f4fd;
 }
 
 .tem-list {  
@@ -461,27 +493,6 @@ skills-icon {
    display: block;
    text-align: center;
    padding: 32px 0;
-}
-
-.sab-title-item {
- font-weight: 500;
-   font-size: 20px;
-   line-height: 1.2;
-   letter-spacing: 0.02em;
-   text-align: center;
-   color: #2e2f42;
-   margin-bottom: 8px;
-   padding: 0;
-}
-
-.tem-item-text {
- font-size: 16px;
-   line-height: 1.5;
-   letter-spacing: 0.02em;
-   text-align: center;
-   color: #434455;
-   margin-bottom: 8px;
- 
 }
 
 .icon-group-link {
@@ -523,6 +534,60 @@ skills-icon {
    padding-top: 48px;
    padding-bottom: 96px;
 }
+.portfolio-title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.11;
+   letter-spacing: 0.02em;
+   text-align: center;
+   color: #2e2f42;
+   margin-bottom: 72px;
+}
+.portfolio-list {
+   padding-left: 0px;
+   margin: 0;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 48px 0px;
+}
+.portfolio-item {
+   width: 100%;
+   padding-bottom: 72px;
+   margin-left: 0px;
+   transform: translateY(0%);
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-imeges {
+   display: block;
+   margin: 0 auto;
+}
+.port-cont-text {
+   margin-left: 0px;
+   margin-top: 1px;
+   padding: 32px 16px;
+   text-align: left;
+   border: 1px solid #e7e9fc;
+   border-top: none;
+}
+.portf-sabtitle {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: #2e2f42;
+   margin-left: 0;
+   margin-bottom: 8px;
+   padding-left: 0px;  
+}
+.portfolio-item-text {
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: #434455;
+   margin: 0;
+   padding-left: 0px; 
+}
 
 /*--Portfolio-.portfolo-section {
    padding: 120px 0;
@@ -539,16 +604,6 @@ skills-icon {
   
 }
 
-.portfolio-title {
- font-weight: 700;
-   font-size: 36px;
-   line-height: 1.11;
-   letter-spacing: 0.02em;
-   text-align: center;
-   color: #2e2f42;
-   margin-bottom: 72px;
-}
-
 .portfolio-list {
    padding-left: 0px;
    margin: 0;
@@ -556,7 +611,6 @@ skills-icon {
    flex-wrap: wrap;
    column-gap: 24px;
    row-gap: 48px;
-   
 }
 
 .portfolio-item {
@@ -587,26 +641,13 @@ skills-icon {
    border-top: none;
 }
 
-.portf-sabtitle {
- font-weight: 500;
-   font-size: 20px;
-   line-height: 1.2;
-   letter-spacing: 0.02em;
-   color: #2e2f42;
-   margin-left: 0;
-   margin-bottom: 8px;
-   padding-left: 0px;
-   
-}
-
 .portfolio-item-text {
- font-size: 16px;
+   font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #434455;
    margin: 0;
-   padding-left: 0px;
-   
+   padding-left: 0px; 
 }
 .portfol-list-img-wrapper {
    position: relative;
