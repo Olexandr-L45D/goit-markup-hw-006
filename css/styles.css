@@ -277,6 +277,9 @@ address {
 .skills-item {
    margin-bottom: 72px;
 }
+skills-icon {
+   display: none;
+}
 .icon-link-skil {
    display: none;
 }
