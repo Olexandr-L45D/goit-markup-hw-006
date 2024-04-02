@@ -277,7 +277,9 @@ address {
 .skills-item {
    margin-bottom: 72px;
 }
-
+.icon-link-skil {
+   display: none;
+}
 .skil-sabtitle {
    font-weight: 700;
    font-size: 36px;
