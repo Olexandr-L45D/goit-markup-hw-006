@@ -808,7 +808,7 @@ address {
 
 /*--Footer--*/
 
-.footer  {
+footer  {
    max-width: 768px;
    height: 664px;
    background: #2e2f42;
@@ -821,7 +821,7 @@ address {
 
 @media screen and (min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi), (min-resolution: 2dppx) {
-   .footer {
+   footer {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), url(../images/Dark-bgFooter-mob2x.jpg);
 
@@ -834,10 +834,6 @@ address {
    align-items: center;
    text-align: center; 
 }
-/*.style {
-   display: flex; 
-   align-items: baseline;
-}*/
 
 .footer-logo-cont {
    height: 112px;
@@ -845,7 +841,7 @@ address {
    margin: 0px auto;
    display: block;
    text-align: center;
-   padding-top: 96px;
+   padding: 96px 0px;
 }
 .footer-text {
    font-size: 16px;
@@ -879,7 +875,12 @@ address {
    margin: auto;
    justify-content: center;
 }
-
+.social-media-conteiner {
+   display: block;
+   text-align: center;
+   align-items: center;
+   padding: 72px 0px;
+}
 .sab-title-footer {
 font-weight: 500;
 font-size: 16px;
@@ -887,7 +888,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #FFFFFF;
 margin-bottom: 16px;
-text-align: left;
+text-align: center;
    
 }
 
@@ -921,7 +922,7 @@ text-align: left;
 
 
 @media screen and (min-width: 768px) {
-   .footer  {
+   footer  {
       max-width: 1158px;
       height: 456px;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -931,24 +932,32 @@ text-align: left;
    
 @media screen and (min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi), (min-resolution: 2dppx) {
-   .footer {
+   footer {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), url(../images/Dark-bgFoot-Planchet2x.jpg);
 
    }
 }
+.footer-container {
+   display: flex;
+   align-items: baseline; 
+}
+.style {
+   display: flex; 
+   align-items: baseline;
+}
 
 .footer-logo-cont {
    height: 112px;
-   width: 288px;
-   margin-right: 120px;
+   width: 264px;
+   margin-right: 24px;
    display: inline-block;
    align-content: flex-start;
    padding-top: 96px;
 }
 
    @media screen and (min-width: 1158px) {
-      .footer {
+      footer {
          padding: 100px 0px; 
          max-width: 1440px;
          height: 312px;
@@ -959,30 +968,21 @@ text-align: left;
         
      @media screen and (min-device-pixel-ratio: 2), 
      (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .footer {
+        footer {
            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
          rgba(46, 47, 66, 0.7)), url(../images/Dark-bgFoot-Planchet2x.jpg);
      
         }
      }
        
-
-/*.footer-container {
-   display: flex;
-   align-items: baseline; 
-}*/
-/*.style {
-   display: flex; 
-   align-items: baseline;
-}
-
 .footer-logo-cont {
    height: 112px;
    width: 264px;
    margin-right: 120px;
    display: inline-block;
    align-content: flex-start;
-}*/
+   padding-top: 100px;
+}
 
 /*.footer-text {
  font-size: 16px;
