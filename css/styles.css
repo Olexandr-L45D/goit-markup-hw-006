@@ -610,75 +610,6 @@ skills-icon {
       
    }
    
-/*--
-.tem-list {  
-   padding-left: 0px;
-   margin: 0;
-   display: flex;
-   gap: 24px;
- 
-}
-
-.tem-item {
-   border-bottom: 1px solid blue;
-   border: 1px solid #e7e9fc;
-   border-top: none;
-   padding: 32px 16px;
-   width: calc((100% - 72px) /4);
-   border-radius: 0 0 4px 4px;
-   padding: 0px 0px 2px 0px;
-   background-color: #fff;
-   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-   text-align: center;
-   
-}
-
-
-.tem-imeges {
-   display: block;
-   max-width: 100%;
-   height: auto;
-}
-.text-conteiner {
-   display: block;
-   text-align: center;
-   padding: 32px 0;
-}
-
-.icon-group-link {
-   display: flex;
-   gap: 24px;
-   margin: auto;
-   justify-content: center;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-li-list {
-   display: block;
-   display: flex;
-}
-.icon-link {
-   width: 40px;
-   height: 40px;
-   background-color: #4D5AE5;
-   border-radius: 50%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-link:hover {
-   background-color: #404bbf;
-}
-.icon-link:focus {
-   background-color: #404bbf;
-}
-
-.tem-icon {
-   fill: #f4f4fd;
-}
-
 /*--Portfolio--*/
 .portfolo-section {
    padding: 96px 0px;
@@ -707,8 +638,8 @@ skills-icon {
    padding-bottom: 72px 0px;
    margin-left: 0px;
    text-align: center; 
-   /*transform: translateY(0%);
-   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+   /*transform: translateY(0%);*/
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-imeges {
@@ -754,14 +685,14 @@ skills-icon {
    .container {
       width: 768px;
    }
-   /*.portfolio-container {
+   .portfolio-container {
    max-width: 768px;  
    background-color: #ffff;
    display: block;
    text-align: center;
    border: 1px solid #ffff;
    margin: 100px 150px;
-}*/
+   }
    .portfolio-list {
       display: flex;
       /*flex-wrap: wrap;*/
