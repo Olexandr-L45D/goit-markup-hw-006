@@ -204,6 +204,15 @@ address {
     rgba(46, 47, 66, 0.7)), url(../images/Dark-bgMob1x.jpg);
 }
 
+@media screen and (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi), (min-resolution: 2dppx) {
+   .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url(../images/Dark-bgMob2x.jpg);
+
+   }
+}
+
 .hro-container {
    align-items: center;
    text-align: center;
@@ -218,7 +227,7 @@ address {
    margin: auto;
    padding: 0px;
    max-width: 216px;
-   height: 160px
+   height: 160px;
 }
 .hero-buy-button {
    font-weight: 500;
@@ -231,8 +240,7 @@ address {
    text-align: center;
   min-width: 169px;
   height: 56px;
-   top: 428px;
-  left: 636px;
+  top: 72px;
   padding: 16px, 32px, 16px, 32px;
   border: none;
   border-radius: 4px;
@@ -256,12 +264,25 @@ address {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), url(../images/Dark-bgHeroPlanchet1x.jpg);
    }
+ 
+@media screen and (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi), (min-resolution: 2dppx) {
+   .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url(../images/Dark-bgHeroPlanchet2x.jpg);
+
+   }
+}
+}
    .hero-title {
       font-size: 56px;
       line-height: 1.07;
       max-width: 496px;
       height: 120px
    }
+   
+.hero-buy-button {
+   top: 268px;
 }
 
 @media screen and (min-width: 1158px) {
@@ -273,8 +294,19 @@ address {
    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
 }
+ 
+@media screen and (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi), (min-resolution: 2dppx) {
+   .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url(../images/people-officeDeskt2x1.jpg);
+
+   }
+}
 .hero-buy-button {
    margin-left: 500px;
+   top: 428px;
+   left: 636px;
 }
 
 }
