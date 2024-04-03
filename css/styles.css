@@ -678,7 +678,8 @@ skills-icon {
    gap: 0px 0px;
 }
 .overlay {
-   display: none;
+   transform: translate(0%);
+   
 }
 
 @media screen and (min-width: 768px) {
@@ -695,7 +696,7 @@ skills-icon {
    }
    .portfolio-list {
       display: flex;
-      /*flex-wrap: wrap;*/
+      flex-wrap: wrap;
       column-gap: 24px;
       row-gap: 72px;
    }
