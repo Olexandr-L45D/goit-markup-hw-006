@@ -634,7 +634,9 @@ skills-icon {
    letter-spacing: 0.02em;
    text-align: center;
    color: #2e2f42;
+   margin: 0;
    margin-bottom: 72px;
+   padding-bottom: 72px;
 }
 .portfolio-list {
    padding-left: 0px;
@@ -645,8 +647,9 @@ skills-icon {
 }
 .portfolio-item {
    width: 100%;
-   padding-bottom: 72px;
+   padding-bottom: 72px 0px;
    margin-left: 0px;
+   text-align: center; 
    /*transform: translateY(0%);
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
@@ -680,6 +683,14 @@ skills-icon {
    color: #434455;
    margin: 0;
    padding-left: 0px; 
+}
+.portfol-list-img-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0px 0px;
+}
+.overlay {
+   display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -736,18 +747,13 @@ skills-icon {
    column-gap: 24px;
    row-gap: 48px;
 }
-
+ 
 .portfolio-item {
    width: calc((100% - 48px) /3);
    margin-left: 0px;
    transform: translateY(0%);
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-}        
-
-/*--Portfolio--
-
-
 
 .portfolio-item:hover {
    color: #404BBF;
@@ -803,13 +809,12 @@ skills-icon {
    overflow: auto;
    transform: translateY(100%);
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   padding: 40px 32px;
-   
-}
-.portfolio-item:hover .overlay,
-.portfolio-item:focus .overlay {
-   transform: translateY(0%);
-   
+   padding: 40px 32px; 
+  }
+   .portfolio-item:hover .overlay,
+   .portfolio-item:focus .overlay {
+   transform: translateY(0%);   
+   }
 }
 
 
