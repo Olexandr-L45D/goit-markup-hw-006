@@ -287,7 +287,7 @@ address {
 
 @media screen and (min-width: 1158px) {
 .hero {
-   padding: 188px 0; 
+   padding: 188px 0px; 
    background: #2e2f42;
    max-width: 1440px;
    height: 600px;
@@ -333,7 +333,7 @@ address {
 .skills-item {
    margin-bottom: 72px;
 }
-skills-icon {
+.skills-icon {
    display: none;
 }
 .icon-link-skil {
@@ -803,22 +803,36 @@ skills-icon {
    transform: translateY(0%);   
    }
 }
-
+}
 
 
 /*--Footer--*/
 
-
-/*--Footer--footer {
+.footer  {
+   max-width: 768px;
+   height: 664px;
    background: #2e2f42;
-   padding: 100px 0px;
-   
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url(../images/Dark-bgFooter-mob1x.jpg);
+  }
+
+@media screen and (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi), (min-resolution: 2dppx) {
+   .footer {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url(../images/Dark-bgFooter-mob2x.jpg);
+
+   }
 }
+   
 
 .footer-container {
-   display: flex;
-   align-items: baseline;
-   
+   display: block;
+   align-items: center;
+   text-align: center; 
 }
 .style {
    display: flex; 
@@ -832,19 +846,16 @@ skills-icon {
    display: inline-block;
    align-content: flex-start;
 }
-
 .footer-text {
- font-size: 16px;
- line-height: 24px;
- letter-spacing: 0.02em;
- color: #F4F4FD;
- margin: 0px;
- padding: 0px;
- max-width: 264px;
- 
-}
-
-.footer-link {
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.02em;
+   color: #F4F4FD;
+   margin: 0px;
+   padding: 0px;
+   max-width: 264px;
+  }
+  .footer-link {
    font-family: Raleway;
    font-size: 18px;
    font-weight: 700;
@@ -853,16 +864,11 @@ skills-icon {
    text-align: left;
    color: #F4F4FD;
    display: inline-block;
-   margin-bottom: 16px;
-   
+   margin-bottom: 16px;  
 }
-
 .footer-logo-color {
    color: #4D5AE5;
    cursor: pointer;   
-}
-.social-media-conteiner {
-   
 }
 
 .icon-group-footer-link {
@@ -910,8 +916,115 @@ text-align: left;
   
 .footer-icon {
    fill: #f4f4fd;
+}
+
+
+@media screen and (min-width: 768px) {
+   .footer  {
+      max-width: 1158px;
+      height: 456px;
+      
+   }
+
+   @media screen and (min-width: 1158px) {
+      .footer {
+         padding: 100px 0px; 
+         max-width: 1440px;
+         height: 312px;
+         
+       }
+
+/*.footer-container {
+   display: flex;
+   align-items: baseline; 
+}*/
+/*.style {
+   display: flex; 
+   align-items: baseline;
+}
+
+.footer-logo-cont {
+   height: 112px;
+   width: 264px;
+   margin-right: 120px;
+   display: inline-block;
+   align-content: flex-start;
+}*/
+
+/*.footer-text {
+ font-size: 16px;
+ line-height: 24px;
+ letter-spacing: 0.02em;
+ color: #F4F4FD;
+ margin: 0px;
+ padding: 0px;
+ max-width: 264px;
+}*/
+
+/*.footer-link {
+   font-family: Raleway;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 21px;
+   letter-spacing: 0.03em;
+   text-align: left;
+   color: #F4F4FD;
+   display: inline-block;
+   margin-bottom: 16px;  
+}*/
+
+/*.footer-logo-color {
+   color: #4D5AE5;
+   cursor: pointer;   
+}*/
+
+/*.icon-group-footer-link {
+   display: flex;
+   gap: 16px;
+   width: 100%;
+   margin: auto;
+   justify-content: center;
+}
+
+.sab-title-footer {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+margin-bottom: 16px;
+text-align: left;
    
 }
+
+.icon-li-fot-list {
+   display: block;
+   display: flex;
+   margin: 0px;
+
+}
+.icon-fot-link {
+   width: 40px;
+   height: 40px;
+   background-color: #4D5AE5; 
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-fot-link:hover {
+   background-color: #31d0aa;
+}
+.icon-fot-link:focus {
+   background-color: #31d0aa;
+}
+  
+.footer-icon {
+   fill: #f4f4fd;
+   
+}*/
 /*--MODAL Form Foter--*/
 
 /*--MODAL Form Foter-.dacdrop-footer {
