@@ -612,8 +612,8 @@ skills-icon {
    
 /*--Portfolio--*/
 .portfolo-section {
-   padding: 96px 0px;
-   margin: 96px 0px;
+   /*padding: 120px 0px;
+   margin-top: 96px 0px;*/
 }
 .portfolio-title {
    font-weight: 700;
@@ -627,16 +627,15 @@ skills-icon {
    
 }
 .portfolio-list {
-   padding-left: 0px;
-   margin: 0;
    display: flex;
    flex-wrap: wrap;
-   gap: 72px 0px 48px 0px;
+   gap: 72px 0px;
+   
 }
 .portfolio-item {
    width: 100%;
-   padding-bottom: 72px 0px;
-   margin-left: 0px;
+   padding: 32px 16px;
+   padding-bottom: 72px;
    text-align: center; 
    /*transform: translateY(0%);*/
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -679,7 +678,6 @@ skills-icon {
 }
 .overlay {
    transform: translate(0%);
-   
 }
 
 @media screen and (min-width: 768px) {
@@ -696,7 +694,7 @@ skills-icon {
    }
    .portfolio-list {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       column-gap: 24px;
       row-gap: 72px;
    }
