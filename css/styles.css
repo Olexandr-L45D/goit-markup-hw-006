@@ -196,7 +196,6 @@ address {
    padding: 96px 0px;
    background: #2e2f42;
    max-width: 768px;
-   /*height: 432px;*/
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -789,7 +788,6 @@ address {
 
 footer  {
    max-width: 768px;
-   height: 664px;
    background: #2e2f42;
    background-repeat: no-repeat;
    background-position: center;
