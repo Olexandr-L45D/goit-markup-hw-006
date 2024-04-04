@@ -429,8 +429,13 @@ address {
     padding: 0px; 
     padding-right: 16px;
     margin-left: 0px;
-    padding-left: 0px;
-      
+    padding-left: 0px; 
+   }
+   .skills-icon {
+      display: block;
+   }
+   .icon-link-skil {
+      display: block;
    }
    .skil-sabtitle {
       font-weight: 500;
