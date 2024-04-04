@@ -480,16 +480,15 @@ address {
    display: flex;
    flex-wrap: wrap;
    gap: 72px 0px;
- 
+   flex-direction: column;
+   align-items: center;
 }
+
 .tem-item {
    border-bottom: 1px solid blue;
    border: 1px solid #e7e9fc;
    border-top: none;
-   padding: 32px 16px;
-   width: 100%;
    border-radius: 0 0 4px 4px;
-   padding-bottom: 72px;
    background-color: #fff;
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
    text-align: center;  
@@ -505,7 +504,6 @@ address {
    padding: 0;
 }
 .tem-item-text {
-     font-weight: 400;
      font-size: 16px;
      line-height: 1.5;
      letter-spacing: 0.02em;
@@ -513,10 +511,7 @@ address {
      color: #434455;
      margin-bottom: 8px;
   }
-.tem-imeges {
-   display: block;
-   margin: 0 auto;
-}
+
 .text-conteiner {
    display: block;
    text-align: center;
@@ -561,8 +556,8 @@ address {
    .container {
       width: 768px;
    }
-   .tem-list {
-      display: flex;
+   .tem-list {  
+      flex-direction:row;
       gap: 72px 24px;
    }
    .tem-item {
@@ -574,7 +569,6 @@ address {
    
       }
       .tem-imeges {
-         display: block;
          max-width: 100%;
          height: auto;
       }
@@ -599,17 +593,16 @@ address {
       border-bottom: 1px solid blue;
       border: 1px solid #e7e9fc;
       border-top: none;
-      padding: 32px 16px;
       width: calc((100% - 72px) /4);
       border-radius: 0 0 4px 4px;
-      padding: 0px 0px 2px 0px;
       background-color: #fff;
       box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-      text-align: center;
-      
+      text-align: center; 
    }
+}
    
 /*--Portfolio--*/
+
 .portfolo-section {
    padding: 96px 0px;
    
@@ -628,21 +621,15 @@ address {
    display: flex;
    flex-wrap: wrap;
    gap: 72px 0px;
+   flex-direction: column;
+   align-items: center;
    
 }
 .portfolio-item {
-   width: 100%;
-   padding: 32px 16px;
-   padding-bottom: 72px;
-   text-align: center; 
-   /*transform: translateY(0%);*/
+   text-align: center;
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-imeges {
-   display: block;
-   margin: 0 auto;
-}
 .port-cont-text {
    margin-left: 0px;
    margin-top: 1px;
@@ -657,17 +644,16 @@ address {
    line-height: 1.2;
    letter-spacing: 0.02em;
    color: #2e2f42;
-   margin-left: 0;
-   margin-bottom: 8px;
-   padding-left: 0px;  
+   margin-bottom: 8px; 
+   text-align: left; 
 }
 .portfolio-item-text {
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #434455;
-   margin: 0;
-   padding-left: 0px; 
+   text-align: left; 
+   margin-bottom: 8px; 
 }
 .portfol-list-img-wrapper {
    display: flex;
@@ -682,19 +668,17 @@ address {
    .container {
       width: 768px;
    }
-   .portfolio-container {
-   max-width: 768px;  
+   
+   .portfolio-container {  
    background-color: #ffff;
-   display: block;
+   display:flex;
    text-align: center;
    border: 1px solid #ffff;
-   margin: 100px 150px;
+   margin: 96px 0px;
    }
    .portfolio-list {
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 24px;
-      row-gap: 72px;
+      flex-direction:row;
+      gap: 72px 24px;
    }
    .portfolio-item {
       width: calc((100% - 24px) /2);
@@ -707,6 +691,7 @@ address {
          height: auto;
       }
    }
+
    @media screen and (min-width: 1158px) {
    .container {
       width: 1158px;
@@ -721,7 +706,6 @@ address {
    border: 1px solid #ffff;
    width: 1160px;
    margin: 100px 150px;
-  
 }
 
 .portfolio-list {
@@ -730,7 +714,7 @@ address {
    display: flex;
    flex-wrap: wrap;
    column-gap: 24px;
-   row-gap: 48px;
+   row-gap: 48px;  
 }
  
 .portfolio-item {
@@ -748,7 +732,6 @@ address {
    transform: translateY(0%);
 }
 .portfolio-imeges {
-   display: block;
    max-width: 100%;
    height: auto;
 }
@@ -801,8 +784,6 @@ address {
    transform: translateY(0%);   
    }
 }
-}
-
 
 /*--Footer--*/
 
