@@ -807,9 +807,9 @@ footer  {
    height: 112px;
    width: 288px;
    margin: 0px auto;
-   display: block;
+   
    text-align: center;
-   /*padding: 96px 0px;*/
+   padding: 96px 0px;
 }
 .footer-text {
    font-size: 16px;
@@ -824,7 +824,7 @@ footer  {
    font-weight: 700;
    line-height: 21px;
    letter-spacing: 0.03em;
-   text-align: left;
+   text-align: center;
    color: #F4F4FD;
    display: inline-block;
    margin-bottom: 16px;  
@@ -842,10 +842,10 @@ footer  {
    justify-content: center;
 }
 .social-media-conteiner {
-   display: block;
+   display: inline-block;
    text-align: center;
    align-items: center;
-   padding: 72px 0px;
+   padding-top: 72px;
 }
 .sab-title-footer {
 font-weight: 500;
@@ -855,7 +855,7 @@ letter-spacing: 0.02em;
 color: #FFFFFF;
 margin-bottom: 16px;
 text-align: center;
-   
+align-items: center; 
 }
 
 .icon-li-fot-list {
@@ -885,7 +885,13 @@ text-align: center;
 .footer-icon {
    fill: #f4f4fd;
 }
-
+.modal-sabtitle-footer {
+   margin-bottom: 16px;
+}
+.modal-label-footer {
+   margin-bottom: 16px;
+}
+.button-modal-footer
 
 @media screen and (min-width: 768px) {
    footer  {
