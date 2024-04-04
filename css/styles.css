@@ -329,7 +329,6 @@ address {
    justify-content: center;
 }
 
-
 .skills-item {
    margin-bottom: 72px;
 }
@@ -354,8 +353,7 @@ address {
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
-   color: #434455;
-   
+   color: #434455;  
 }
 
 @media screen and (min-width: 768px) {
@@ -374,30 +372,30 @@ address {
       margin-left: 0px;
       padding-left: 0px;
       text-align: left;
-   
-      }
-   
+      }   
 }
 
 @media screen and (min-width: 1158px) {
    .container {
       width: 1158px;
    }
+
    .skills-section {
-      padding: 120px 0px;
-      
+      padding: 120px 0px;  
    }
+
    .ski-conteiner {
    border: 1px solid #ffff;
    display: block;
    display: flex;
-    gap: 24px; 
+   gap: 24px; 
    align-items: center;
    width: calc(100%-4*24);
-   height: 104px;
+   /*height: 104px;*/
    padding: 0 0px;
    margin-left: 150px 120px;   
    }
+
    .visually-hidden {
       position: absolute;
       width: 1px;
@@ -410,18 +408,19 @@ address {
       clip: rect(0 0 0 0);
       overflow: hidden;
     }
+
    .skills-list {
        display: block; 
        display: flex;
-       flex-wrap: nowrap;
    }
+       
    .skills-item {
-      width: calc((100% - 72px) /4);
-      border: 1px solid #8e8f99; 
+   width: calc((100% - 72px) /4);
+   align-items: center;
+   justify-content: center;
+   /*border: 1px solid #8e8f99; 
     border-radius: 4px;
     display: block; 
-    align-items: center;
-    justify-content: center;
     height: 112px;
     background-color: #f4f4fd;
     margin-right: 24px;
@@ -429,7 +428,7 @@ address {
     padding: 0px; 
     padding-right: 16px;
     margin-left: 0px;
-    padding-left: 0px; 
+    padding-left: 0px;*/ 
    }
    
    .skil-sabtitle {
