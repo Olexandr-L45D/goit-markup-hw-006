@@ -431,12 +431,7 @@ address {
     margin-left: 0px;
     padding-left: 0px; 
    }
-   .skills-icon {
-      display: block;
-   }
-   .icon-link-skil {
-      display: block;
-   }
+   
    .skil-sabtitle {
       font-weight: 500;
       font-size: 20px;
@@ -448,6 +443,7 @@ address {
          padding: 0px; 
       }
       .icon-link-skil {
+         display: block;
          width: 264px;
          height: 112px;
          background-color: #F4F4FD;
@@ -462,6 +458,7 @@ address {
       } 
       
        .skills-icon {
+         display: block;
         fill: #111111;
 
        }
@@ -699,7 +696,7 @@ address {
    }
    .portfolio-list {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       column-gap: 24px;
       row-gap: 72px;
    }
@@ -945,11 +942,9 @@ text-align: center;
 }
 .footer-container {
    display: flex;
-   align-items: baseline; 
 }
 .style {
    display: flex; 
-   align-items: baseline;
 }
 
 .footer-logo-cont {
@@ -979,7 +974,16 @@ text-align: center;
      
         }
      }
-       
+ 
+   .footer-container {
+      display: flex;
+      align-items: baseline; 
+   }
+   .style {
+      display: flex; 
+      align-items: baseline;
+   }
+     
 .footer-logo-cont {
    height: 112px;
    width: 264px;
