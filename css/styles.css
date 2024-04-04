@@ -247,7 +247,6 @@ address {
  box-shadow: 0 4px 4px 0, rgba 0, 0, 0, 0.15;
  margin-top: 60px;
  margin: auto;
- /*margin-left: 500px;*/
  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-buy-button:hover,
@@ -389,7 +388,6 @@ address {
    gap: 24px; 
    align-items: center;
    width: calc(100%-4*24);
-   /*height: 104px;*/
    padding: 0 0px;
    margin-left: 150px 120px;   
    }
@@ -416,17 +414,6 @@ address {
    width: calc((100% - 72px) /4);
    align-items: center;
    justify-content: center;
-   /*border: 1px solid #8e8f99; 
-    border-radius: 4px;
-    display: block; 
-    height: 112px;
-    background-color: #f4f4fd;
-    margin-right: 24px;
-    margin-bottom: 8px;
-    padding: 0px; 
-    padding-right: 16px;
-    margin-left: 0px;
-    padding-left: 0px;*/ 
    }
    
    .skil-sabtitle {
@@ -788,6 +775,7 @@ address {
 
 footer  {
    max-width: 768px;
+   height: 664px;
    background: #2e2f42;
    background-repeat: no-repeat;
    background-position: center;
@@ -805,11 +793,14 @@ footer  {
    }
 }
    
-
 .footer-container {
-   display: block;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 72px 0px;
+   flex-direction: column;
    align-items: center;
-   text-align: center; 
+   text-align: center;
+   justify-content: center;
 }
 
 .footer-logo-cont {
@@ -818,15 +809,13 @@ footer  {
    margin: 0px auto;
    display: block;
    text-align: center;
-   padding: 96px 0px;
+   /*padding: 96px 0px;*/
 }
 .footer-text {
    font-size: 16px;
    line-height: 24px;
    letter-spacing: 0.02em;
    color: #F4F4FD;
-   margin: 0px;
-   padding: 0px;
    max-width: 264px;
   }
   .footer-link {
@@ -917,6 +906,8 @@ text-align: center;
 }
 .footer-container {
    display: flex;
+   flex-direction:row;
+   gap: 72px 24px;
 }
 .style {
    display: flex; 
@@ -925,10 +916,21 @@ text-align: center;
 .footer-logo-cont {
    height: 112px;
    width: 264px;
-   margin-right: 24px;
    display: inline-block;
    align-content: flex-start;
    padding-top: 96px;
+   text-align: left;
+}
+
+.footer-text {
+   text-align: left;
+}
+
+.footer-link {
+   text-align: left;
+}
+.sab-title-footer {
+   text-align: left;
 }
 
    @media screen and (min-width: 1158px) {
@@ -1004,6 +1006,7 @@ text-align: center;
 }
 
 .sab-title-footer {
+   text-align: left;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
