@@ -774,38 +774,20 @@ address {
 /*--Footer--*/
 
 footer  {
-   max-width: 768px;
    background: #2e2f42;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url(../images/Dark-bgFooter-mob1x.jpg);
-  }
-
-@media screen and (min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi), (min-resolution: 2dppx) {
-   footer {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url(../images/Dark-bgFooter-mob2x.jpg);
-
-   }
+   padding: 96px 0;
 }
-
+  
 .footer-container {
-   width: 100%;
-   flex-wrap: nowrap;
-   align-items: center;
+   display: flex;
+   gap: 72px;
    flex-direction: column;
-   justify-content: center;
-   text-align: center;  
+    
 }
 
 .footer-logo-cont {
-   width: 288px;
    padding: 96px 0px;
    text-align: center;
-   align-items: center;
 }
 .footer-text {
    font-size: 16px;
@@ -821,9 +803,9 @@ footer  {
    font-weight: 700;
    line-height: 21px;
    letter-spacing: 0.03em;
-   text-align: center;
    color: #F4F4FD;
    display: block;
+   text-align: center;
    margin-bottom: 16px;  
 }
 .footer-logo-color {
@@ -839,10 +821,10 @@ footer  {
    justify-content: center;
 }
 .social-media-conteiner {
-   display: inline-block;
+   display: block;
    text-align: center;
    align-items: center;
-   padding-top: 72px;
+   
 }
 .sab-title-footer {
 font-weight: 500;
@@ -852,7 +834,6 @@ letter-spacing: 0.02em;
 color: #FFFFFF;
 margin-bottom: 16px;
 text-align: center;
-align-items: center; 
 }
 
 .icon-li-fot-list {
@@ -887,9 +868,7 @@ align-items: center;
    display: block;
    background-color: rgba(46, 47, 66, 0.4);
    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   margin-left: 0px;
-   padding-left: 0px;
-   text-align: center;
+   align-items: center;
 }
 
 .modal-sabtitle-footer {
@@ -900,14 +879,12 @@ align-items: center;
    color:#ffffff;
    margin-bottom: 16px;
    text-align: center; 
-   align-items: center; 
   }
 
 .modal-form-footer {
    flex-wrap: wrap;
-   text-align: left;
    flex-direction: column;
-   text-align: center;
+   align-items: center;
 }
 
 .modal-label-footer {
@@ -917,8 +894,6 @@ letter-spacing: 0.04em;
 color:#8e8f99;
 display: block;
 margin-bottom: 16px;
-margin-left: 0px;
-padding-left: 0px;
 text-align: center;
 }
 
@@ -963,42 +938,16 @@ text-align: center;
 @media screen and (min-width: 768px) {
    footer {
       max-width: 1158px;
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url(../images/Dark-bgFoot-Planchet1x.jpg);
-   }
-
-   }
-   
-@media screen and (min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi), (min-resolution: 2dppx) {
-   footer {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url(../images/Dark-bgFoot-Planchet2x.jpg);
-
-   }
 }
+}
+
 .footer-container {
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction:row;
-   gap: 48px 24px;
-   margin-left: 0px;
-}
-.style {
-    
-}
-
-.footer-logo-cont {
-   height: 112px;
-   width: 264px;
-   margin-right: 120px;
-   display: inline-block;
-   align-content: flex-start;
-   text-align: left;
-}
-
-.social-media-conteiner {
-   padding-top: 48px 0px 0px 0px;
+  display: flex;
+  gap: 72px 24px;
+  padding-left: 108px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline; 
 }
 
 .footer-text {
@@ -1012,6 +961,9 @@ text-align: center;
    text-align: left;
 }
 
+.social-media-conteiner {
+   margin-right: auto;
+}
 
 .dacdrop-footer {
    display:inline-block;
@@ -1019,7 +971,7 @@ text-align: center;
    background-color: rgba(46, 47, 66, 0.4);
    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 24px 0px;
+   
 }
 
 .modal-sabtitle-footer {
@@ -1035,10 +987,9 @@ text-align: center;
 
 .modal-form-footer {
    display: flex;
-   flex-direction: row;
    gap: 24px;
-   right: 0;
-   bottom: 0;
+   flex-direction: row;
+   
 }
 
 .modal-label-footer {
@@ -1099,24 +1050,12 @@ border-radius: 4px;
          padding: 100px 0px; 
          max-width: 1440px;
          background: #2e2f42;
-         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-         rgba(46, 47, 66, 0.7)), url(../images/Dark-bgFoot-Planchet1x.jpg);
-        }
-        }
-        
-     @media screen and (min-device-pixel-ratio: 2), 
-     (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        footer {
-           background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-         rgba(46, 47, 66, 0.7)), url(../images/Dark-bgFoot-Planchet2x.jpg);
-     
         }
      }
    
    .footer-container {
-      display: flex;
-      align-items: baseline;
-      
+      gap: unset;
+      padding-left: 15px;
    }
    .style {
       display: flex; 
@@ -1124,11 +1063,11 @@ border-radius: 4px;
    }
    
    .footer-logo-cont {
-      height: 112px;
-      width: 264px;
-      margin-right: 120px;
-      display: inline-block;
-      align-content: flex-start;
+     margin-right: 120px;
+   }
+
+   .social-media-conteiner {
+      margin-right: auto;
    }
    
    .footer-text {
@@ -1141,26 +1080,10 @@ border-radius: 4px;
     max-width: 264px;
     
    }
-   
-   .footer-link {
-      font-family: Raleway;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 21px;
-      letter-spacing: 0.03em;
-      text-align: left;
-      color: #F4F4FD;
-      display: inline-block;
-      margin-bottom: 16px;
-      
-   }
-   
+    
    .footer-logo-color {
       color: #4D5AE5;
       cursor: pointer;   
-   }
-   .social-media-conteiner {
-      
    }
    
    .icon-group-footer-link {
@@ -1178,7 +1101,7 @@ border-radius: 4px;
    letter-spacing: 0.02em;
    color: #FFFFFF;
    margin-bottom: 16px;
-   text-align: left;
+   /*text-align: left;*/
       
    }
    
