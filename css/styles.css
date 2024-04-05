@@ -792,23 +792,18 @@ footer  {
 
    }
 }
-   
+
 .footer-container {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 72px 0px;
-   flex-direction: column;
+   width: 100%;
+   flex-wrap: nowrap;
    align-items: center;
-   text-align: center;
+   flex-direction: column;
    justify-content: center;
+   text-align: center;  
 }
 
 .footer-logo-cont {
-   height: 112px;
    width: 288px;
-   margin: 0px auto;
-   
-   text-align: center;
    padding: 96px 0px;
 }
 .footer-text {
@@ -826,7 +821,7 @@ footer  {
    letter-spacing: 0.03em;
    text-align: center;
    color: #F4F4FD;
-   display: inline-block;
+   display: block;
    margin-bottom: 16px;  
 }
 .footer-logo-color {
@@ -885,21 +880,86 @@ align-items: center;
 .footer-icon {
    fill: #f4f4fd;
 }
+
+.dacdrop-footer {
+   display: block;
+   background-color: rgba(46, 47, 66, 0.4);
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   margin-left: 0px;
+   padding-left: 0px;
+}
+
 .modal-sabtitle-footer {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color:#ffffff;
    margin-bottom: 16px;
+   text-align: center;  
+  }
+
+.modal-form-footer {
+   flex-wrap: wrap;
+   text-align: left;
+   flex-direction: column;
 }
+
 .modal-label-footer {
-   margin-bottom: 16px;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color:#8e8f99;
+display: block;
+margin-bottom: 16px;
+margin-left: 0px;
+padding-left: 0px;
 }
-.button-modal-footer
+
+.modal-input-footer {
+   width: 264px;
+   height: 40px;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #ffffff;
+   background-color: transparent;
+   font-size: 12px;
+   line-height: 2;
+   letter-spacing: 0.04em;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   color: #FFFFFF;
+}
+
+.E-mail {
+   color: #FFFFFF;
+}
+
+.button-modal-footer {
+min-width: 165px;
+height: 40px;
+justify-content: center;
+align-items: center;
+font-family: "Roboto", sans-serif ;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #ffffff;
+cursor: pointer;
+background-color: #4D5AE5;
+border: none;
+border-radius: 4px;
+}
 
 @media screen and (min-width: 768px) {
-   footer  {
+   footer {
       max-width: 1158px;
       height: 456px;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), url(../images/Dark-bgFoot-Planchet1x.jpg);
    }
+
    }
    
 @media screen and (min-device-pixel-ratio: 2), 
@@ -912,20 +972,22 @@ align-items: center;
 }
 .footer-container {
    display: flex;
+   flex-wrap: wrap;
    flex-direction:row;
    gap: 72px 24px;
+   margin-left: 0px;
 }
 .style {
-   display: flex; 
+    
 }
 
 .footer-logo-cont {
    height: 112px;
    width: 264px;
-   display: inline-block;
+   display: block;
    align-content: flex-start;
    padding-top: 96px;
-   text-align: left;
+   text-align: center;
 }
 
 .footer-text {
@@ -937,6 +999,86 @@ align-items: center;
 }
 .sab-title-footer {
    text-align: left;
+}
+
+
+.dacdrop-footer {
+   display:inline-block;
+   margin-left: 0px;
+   background-color: rgba(46, 47, 66, 0.4);
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-sabtitle-footer {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color:#ffffff;
+   margin-left: 0;
+   margin-bottom: 16px; 
+   text-align: left; 
+  }
+
+.modal-form-footer {
+   display: flex;
+   flex-direction: row;
+   gap: 24px;
+   right: 0;
+   bottom: 0;
+}
+
+.modal-label-footer {
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color:#8e8f99;
+display: block;
+margin-bottom: 4px;
+text-align: left;
+}
+
+.modal-input-footer {
+   width: 264px;
+   height: 40px;
+   border: 1px solid #ffffff;
+   background-color: transparent;
+   font-size: 12px;
+   line-height: 2;
+   letter-spacing: 0.04em;
+   padding-left: 16px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   color: #FFFFFF;
+   text-align: left;
+}
+
+.E-mail {
+   color: #FFFFFF;
+}
+
+.button-modal-footer {
+min-width: 165px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Roboto", sans-serif ;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #ffffff;
+cursor: pointer;
+background-color: #4D5AE5;
+border: none;
+border-radius: 4px;
+
+}
+
+.button-icon-footer {
+   margin-left: 16px;
+   
 }
 
    @media screen and (min-width: 1158px) {
@@ -960,6 +1102,8 @@ align-items: center;
  
    .footer-container {
       display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       align-items: baseline; 
    }
    .style {
@@ -974,6 +1118,11 @@ align-items: center;
    display: inline-block;
    align-content: flex-start;
    padding-top: 100px;
+}
+
+.dacdrop-footer {
+   margin-left: 200px;
+   margin-right: 0px;
 }
 
 /*.footer-text {
@@ -1052,84 +1201,6 @@ text-align: left;
    
 }*/
 /*--MODAL Form Foter--*/
-
-/*--MODAL Form Foter-.dacdrop-footer {
-   margin-left: 200px;
-   margin-right: 0px;
-   background-color: rgba(46, 47, 66, 0.4);
-   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-sabtitle-footer {
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.5;
-   letter-spacing: 0.02em;
-   color:#ffffff;
-   margin-left: 0;
-   margin-bottom: 16px;  
-  }
-
-.modal-form-footer {
-   
-   display: block;
-   display: flex;
-   gap: 24px;
-   right: 0;
-   bottom: 0;
-}
-
-.modal-label-footer {
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
-color:#8e8f99;
-display: block;
-margin-bottom: 4px;
-}
-
-.modal-input-footer {
-   width: 264px;
-   height: 40px;
-   border: 1px solid #ffffff;
-   background-color: transparent;
-   font-size: 12px;
-   line-height: 2;
-   letter-spacing: 0.04em;
-   padding-left: 16px;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-   border-radius: 4px;
-   color: #FFFFFF;
-
-}
-
-.E-mail {
-   color: #FFFFFF;
-}
-
-.button-modal-footer {
-min-width: 165px;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-family: "Roboto", sans-serif ;
-font-size: 16px;
-font-weight: 500;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: #ffffff;
-cursor: pointer;
-background-color: #4D5AE5;
-border: none;
-border-radius: 4px;
-
-}
-
-.button-icon-footer {
-   margin-left: 16px;
-   
-}
 
 /*--MODAL Form Free--*/
 
