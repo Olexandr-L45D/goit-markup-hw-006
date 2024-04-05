@@ -804,6 +804,8 @@ footer  {
 .footer-logo-cont {
    width: 288px;
    padding: 96px 0px;
+   text-align: center;
+   align-items: center;
 }
 .footer-text {
    font-size: 16px;
@@ -811,6 +813,7 @@ footer  {
    letter-spacing: 0.02em;
    color: #F4F4FD;
    max-width: 264px;
+   text-align: center;
   }
   .footer-link {
    font-family: Raleway;
@@ -886,6 +889,7 @@ align-items: center;
    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
    margin-left: 0px;
    padding-left: 0px;
+   text-align: center;
 }
 
 .modal-sabtitle-footer {
@@ -895,13 +899,15 @@ align-items: center;
    letter-spacing: 0.02em;
    color:#ffffff;
    margin-bottom: 16px;
-   text-align: center;  
+   text-align: center; 
+   align-items: center; 
   }
 
 .modal-form-footer {
    flex-wrap: wrap;
    text-align: left;
    flex-direction: column;
+   text-align: center;
 }
 
 .modal-label-footer {
@@ -913,6 +919,7 @@ display: block;
 margin-bottom: 16px;
 margin-left: 0px;
 padding-left: 0px;
+text-align: center;
 }
 
 .modal-input-footer {
@@ -928,6 +935,7 @@ padding-left: 0px;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
    color: #FFFFFF;
+   text-align: center;
 }
 
 .E-mail {
@@ -949,6 +957,7 @@ cursor: pointer;
 background-color: #4D5AE5;
 border: none;
 border-radius: 4px;
+text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -982,11 +991,12 @@ border-radius: 4px;
 .footer-logo-cont {
    height: 112px;
    width: 264px;
-   display: block;
+   margin-right: 120px;
+   display: inline-block;
    align-content: flex-start;
-   padding-top: 48px 0px 0px 0px;
-   text-align: center;
+   text-align: left;
 }
+
 .social-media-conteiner {
    padding-top: 48px 0px 0px 0px;
 }
