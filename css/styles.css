@@ -121,9 +121,9 @@ address {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   /*opacity: 0;
+   opacity: 0;
    pointer-events: none;
-   visibility: hidden;*/
+   visibility: hidden;
 }
 
 .close-menu-btn {
@@ -471,7 +471,8 @@ address {
    letter-spacing: 0.02em;
    color: #2e2f42;
    margin-bottom: 8px;
-   text-align: center; 
+   text-align: center;
+   
 }
 
 .skills-item-text {
@@ -532,6 +533,7 @@ address {
       clip-path: inset(100%);
       clip: rect(0 0 0 0);
       overflow: hidden;
+      visibility: hidden;
     }
 
    .skills-list {
