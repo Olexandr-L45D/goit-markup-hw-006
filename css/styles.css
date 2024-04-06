@@ -110,7 +110,6 @@ address {
    cursor: pointer;
    line-height: 0;
    border: none;
-   /*margin-left: auto;*/
 }
 
 .mob-menu {
@@ -118,17 +117,35 @@ address {
    top: 0;
    background-color: #F4F4FD;
    width: 100vw;
-   height: 100vh;
+   height: 100%;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   /*opacity: 0;
+   pointer-events: none;
+   visibility: hidden;*/
 }
 
 .close-menu-btn {
-   display: block;
-   margin-right: auto;
-   margin-bottom: 24px;
-   padding: 24px;
+   position: absolute;
+   top: 24px;
+   right: 24px;
+   width: 24px;
+   height: 24px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #E7E9FC;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   padding: 0;
+   cursor: pointer;
+   transition: background-color 250ms cubic-bezier
+   (0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-nav {
+
 }
 
 .mob-menu-nav-list {
@@ -138,28 +155,46 @@ address {
 
 .mob-nav-link {
     color: #2e2f42;
-     font-weight: 500;
-     font-size: 16px;
-     line-height: 1.5;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
      letter-spacing: 0.02em;
-     padding: 24px 0;
+     padding: 40px 0;
+     padding-left: 16px;
      display: block;
      transition: color 250ms 
      cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-address-list {
-}
-
 .mob-menu-item:not(:last-child) {
    margin-bottom: 40px;
+   
 }
 .mob-menu-item-contact:not(:last-child) {
    margin-bottom: 24px;
 }
 
-.mob-address-link {
+.mob-address-list {
+   margin-left: 16px;
+   margin-bottom: 48px;
 }
+
+.mob-address-link {
+   color: #434455;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+   padding: 24px 0;
+   padding-left: 16px;
+}
+
+.mob-address-link:hover,
+.mob-address-link:focus {
+  color: #404BBF;
+}
+
 
 .mob-menu-icon-link {
    display: flex;
@@ -1287,7 +1322,8 @@ border-radius: 4px;
    border: 1px solid rgba(0, 0, 0, 0.1);
    padding: 0;
    cursor: pointer;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier
+   (0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 
