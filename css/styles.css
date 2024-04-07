@@ -339,13 +339,13 @@ address {
     rgba(46, 47, 66, 0.7)), url(../images/Dark-bgMob1x.jpg);
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi), (min-resolution: 2dppx) {
-   .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url(../images/Dark-bgMob2x.jpg);
-
-   }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .banner {
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+   rgba(46, 47, 66, 0.7)), url(../images/Dark-bgMob2x.jpg);
+  }
 }
 
 .hro-container {
@@ -401,8 +401,9 @@ address {
     rgba(46, 47, 66, 0.7)), url(../images/Dark-bgHeroPlanchet1x.jpg);
    }
  
-@media screen and (-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), 
+screen and (min-resolution: 192dpi) and (min-width: 768px), 
+screen and (min-resolution: 2dppx) and (min-width: 768px){
    .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), url(../images/Dark-bgHeroPlanchet2x.jpg);
@@ -429,9 +430,9 @@ address {
    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
 }
- 
-@media screen and (-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px), 
+screen and (min-resolution: 192dpi) and (min-width: 1158px), 
+screen and (min-resolution: 2dppx) and (min-width: 1158px){
    .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), url(../images/people-officeDeskt2x1.jpg);
